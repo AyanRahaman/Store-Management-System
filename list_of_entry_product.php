@@ -2,6 +2,14 @@
 //For connecting with the database
 require "connection.php";
 
+session_start();
+
+
+$user_first_name =  $_SESSION["user_first_name"];
+$user_last_name =  $_SESSION["user_last_name"];
+
+if(!empty($user_first_name) && !empty($user_last_name))
+{
 
 $cat_sql = "SELECT * FROM product";
 $cat_query = $conn->query($cat_sql);
@@ -15,6 +23,8 @@ $product_name = $cat_data["product_name"];
 
 $data_list[$product_id] = $product_name; 
 }
+
+
 ?>
 
 <!DOCTYPE html>
@@ -52,3 +62,9 @@ $data_list[$product_id] = $product_name;
     
 </body>
 </html>
+<?php
+}
+else{
+    header("location:login.php");
+}
+?>
