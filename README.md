@@ -1,13 +1,6 @@
- add store product succesfully complete 
+=========================== STORE MANAGEMENT SYSTEM =========================
 
- now we have to done list of store product
+Store management system using PHP and MYSQl 
 
- now we have to doen add spend product
 
- upto tutorial 4 complete 
-
- now we have to done with tutorial 5
-
- for now we have to create a new login system 
-
- 
+the Database architecture is in the .docs format
